@@ -7,6 +7,8 @@
 ///
 /// If the `Language Code` is a reserved keyword in Dart, then you will find it prefixed with `l_`
 /// For example: l_as, l_is.
+///
+/// If you have the `Language Code` as `String` and you want to get the corresponding [Language] enum member, then you can use [fromCode] method.
 enum Language {
   af,
   ak,
@@ -158,6 +160,8 @@ enum Language {
   zh,
   zu;
 
+  /// Returns the [Language] enum member from the given [languageCode] String.
+  ///
   /// The [languageCode] is case insensitive
   static Language fromCode(String languageCode) {
     return Language.values.firstWhere(

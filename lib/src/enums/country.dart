@@ -1,11 +1,13 @@
 // ignore_for_file: constant_identifier_names, public_member_api_docs
 
 /// The list of all supported countries
+///
 /// If the `Country Code` consists of more than one part, then you will find it separated by an `underscore`
 /// For example: sh_ac, sh_ta, united_nations
 /// If the `Country Code` is a reserved keyword in Dart, then you will find it prefixed with `c_`
 /// For example: c_as, c_do, c_in, c_is
-
+///
+/// If you have the `Country Code` as `String` and you want to get the corresponding [Country] enum member, then you can use [fromCode] method.
 enum Country {
   ad,
   ae,
@@ -267,6 +269,8 @@ enum Country {
   zm,
   zw;
 
+  /// Returns the [Country] enum member from the given [countryCode] String.
+  ///
   /// The [countryCode] is case insensitive
   static Country fromCode(String countryCode) {
     return Country.values.firstWhere(
