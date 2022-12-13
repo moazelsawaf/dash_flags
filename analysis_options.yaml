@@ -1,0 +1,8 @@
+include: package:flutter_lints/flutter.yaml
+
+linter: 
+  rules:
+    slash_for_doc_comments: true
+    package_api_docs: true
+    public_member_api_docs: true
+    comment_references: true
