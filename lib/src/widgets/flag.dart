@@ -1,6 +1,11 @@
-import 'package:dash_flags/src/utils/flag_cropper.dart';
+// Flutter imports:
 import 'package:flutter/material.dart';
+
+// Package imports:
 import 'package:flutter_svg/flutter_svg.dart';
+
+// Project imports:
+import '/src/utils/flag_cropper.dart';
 
 /// The base flag widget for a specific [flagAsset].
 @protected

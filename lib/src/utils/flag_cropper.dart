@@ -1,3 +1,4 @@
+// Flutter imports:
 import 'package:flutter/material.dart';
 
 /// A custom clipper that crops the flag image to remove the `white space`
