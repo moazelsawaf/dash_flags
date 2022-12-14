@@ -34,7 +34,7 @@ The package uses flags from [TwEmoji Countries & Languages Flags](https://github
 
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/moazelsawaf/dash_flags/main/doc/assets/example_gif.gif" width="50%" alt="Example GIF" />
+<img src="https://raw.githubusercontent.com/moazelsawaf/dash_flags/main/doc/assets/animated_example.gif" width="50%" alt="Example GIF" />
 <br>
 This GIF is taken from the <a href="https://github.com/moazelsawaf/dash_flags/tree/main/example">Example Project</a>
 </p>
