@@ -6,31 +6,33 @@
 ///
 /// ## Usage
 ///
-/// Display a flag of a country:
+/// Import the package:
 ///
 /// ```dart
 /// import 'package:dash_flags/dash_flags.dart';
+/// ```
 ///
+/// Display a flag of a country:
+///
+/// ```dart
 /// CountryFlag(
 ///   country: Country.eg, // You can also use Country.fromCode('eg')
 ///   height: 50,
 /// )
 /// ```
 ///
-/// For more information about the supported countries, please check the `Country` enum.
+/// For more information about the available countries, please check the `Country` enum.
 ///
 /// Display a flag of a language:
 ///
 /// ```dart
-/// import 'package:dash_flags/dash_flags.dart';
-///
 /// LanguageFlag(
 ///   language: Language.ar, // You can also use Language.fromCode('ar')
 ///   height: 50,
 /// )
 /// ```
 ///
-/// For more information about the supported languages, please check the `Language` enum.
+/// For more information about the available languages, please check the `Language` enum.
 library dash_flags;
 
 export 'src/widgets/country_flag.dart';
