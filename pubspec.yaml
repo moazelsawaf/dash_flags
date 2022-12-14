@@ -5,7 +5,7 @@ repository: https://github.com/moazelsawaf/dash_flags
 issue_tracker: https://github.com/moazelsawaf/dash_flags/issues
 screenshots:
   - description: Dash Flags Example GIF
-    path: /doc/assets/example_gif.gif
+    path: doc/assets/example_gif.gif
 
 environment:
   sdk: ">=2.18.5 <3.0.0"
