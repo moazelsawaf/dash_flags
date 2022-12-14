@@ -74,11 +74,12 @@ class _FlagsScreenState extends State<FlagsScreen> {
                 fontWeight: FontWeight.w500,
               ),
             ),
+            const SizedBox(height: 24),
             CountryFlag(
               country: _countries[_selectedCountryIndex],
-              height: 200,
+              height: 150,
             ),
-            const SizedBox(height: 32),
+            const SizedBox(height: 48),
             Text(
               'Language: ${_languages[_selectedLanguageIndex].name.toUpperCase()}',
               style: const TextStyle(
@@ -86,9 +87,10 @@ class _FlagsScreenState extends State<FlagsScreen> {
                 fontWeight: FontWeight.w500,
               ),
             ),
+            const SizedBox(height: 24),
             LanguageFlag(
               language: _languages[_selectedLanguageIndex],
-              height: 200,
+              height: 150,
             )
           ],
         ),
