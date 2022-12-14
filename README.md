@@ -29,9 +29,9 @@
 
 A package for displaying Countries and Languages flags.
 
-This packages provides a set of widgets and enums to display flags of countries and languages inspired by [blade-flags](https://github.com/MohmmedAshraf/blade-flags) package for Laravel by [Mohamed Ashraf](https://github.com/MohmmedAshraf) from Egypt.
+This package provides a set of widgets and enums to display flags of countries and languages inspired by [blade-flags](https://github.com/MohmmedAshraf/blade-flags) package for Laravel by [Mohamed Ashraf](https://github.com/MohmmedAshraf) from Egypt.
 
-The packages uses flags from [TwEmoji Countries & Languages Flags](https://github.com/twitter/twemoji) by Twitter
+The package uses flags from [TwEmoji Countries & Languages Flags](https://github.com/twitter/twemoji) by Twitter
 
 ## 💻 Usage
 
