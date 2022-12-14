@@ -72,6 +72,7 @@ LanguageFlag(
 - If you have the `Country Code` or `Language Code` as `Strings`, then you can use `Country.fromCode(countryCode)` or `Language.fromCode(languageCode)`.
 - If the the `Country Code` or `Language Code` consists of more than one part, then you will find it separated by an `underscore`, for example: `sh_ac` and `en_au`.
 - If the the `Country Code` or `Language Code` is a reserved keyword in Dart, then you will find it prefixed with `c_` or `l_` respectively, for example: `c_as` and `l_as`.
+- If an unknown `Country Code` or `Language Code` used with `.fromCode(String)` method, an unknown flag would be displayed.
 
 ## ✅ Roadmap
 
