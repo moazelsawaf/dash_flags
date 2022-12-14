@@ -26,7 +26,7 @@
 
 ## 💡 Overview
 
-A package for displaying Countries and Languages flags 🌍
+A Flutter package for displaying Countries and Languages flags 🌍
 
 This package provides a set of widgets and enums to display flags of countries and languages inspired by [blade-flags](https://github.com/MohmmedAshraf/blade-flags) package for Laravel by [Mohamed Ashraf](https://github.com/MohmmedAshraf) from Egypt.
 
