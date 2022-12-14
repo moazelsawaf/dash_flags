@@ -17,9 +17,7 @@
   <a href="https://github.com/moazelsawaf/dash_flags">
     <img src="https://img.shields.io/github/stars/moazelsawaf/dash_flags.svg?style=flat&logo=github&colorB=deeppink&label=stars" alt="Star on GitHub">
   </a>
-  <a href="https://opensource.org/licenses/MIT" rel="ugc">
-    <img src="https://img.shields.io/github/license/moazelsawaf/dash_flags?color=red" alt="License: MIT">
-  </a>
+  <a href="https://opensource.org/licenses/MIT" rel="ugc"><img src="https:/  img.shields.io/badge/license-MIT-red.svg" alt="License: MIT"></a>
   <a href="https://github.com/moazelsawaf/dash_flags" rel="ugc"><img   src="https://img.shields.io/github/languages/code-size/moazelsawaf/dash_flags.svg" alt="GitHub code size in bytes"></a>
 </p>
 
