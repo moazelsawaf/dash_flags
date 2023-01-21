@@ -5,9 +5,9 @@ import '../../dash_flags.dart';
 class Helpers {
   /// Returns the asset path of a flag for a specific [country].
   static String countryToFlagAsset(Country country) =>
-      'assets/svgs/flags/countries/country-${country.name}.svg';
+      'assets/svgs/flags/countries/country_${country.name}.svg';
 
   /// Returns the asset path of a flag for a specific [language].
   static String languageToFlagAsset(Language language) =>
-      'assets/svgs/flags/languages/language-${language.name}.svg';
+      'assets/svgs/flags/languages/language_${language.name}.svg';
 }

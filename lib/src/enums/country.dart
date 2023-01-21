@@ -777,6 +777,9 @@ enum Country {
   /// Mayotte
   yt,
 
+  /// Yugoslavia
+  yu,
+
   /// South Africa
   za,
 
