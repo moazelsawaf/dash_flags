@@ -7,7 +7,7 @@ DART_TWO_LETTERS_RESERVED_KEYWORDS=('as' 'in' 'is' 'on' 'do' 'if')
 NO_COLOR='\033[0m'
 YELLOW='\033[0;33m'
 GREEN='\033[0;32m'
-RED='\033[0;31m'
+# RED='\033[0;31m'
 
 # Cloning blade-flags package
 echo -e "${YELLOW}Cloning blade-flags package ..."
@@ -69,10 +69,16 @@ done
 # Moving the new languages flags to the flags directory
 mv * ../../../../../assets/svgs/flags/languages/
 
-Deleting blade-flags cloned repository
-echo -e "${GREEN}Deleting temp files ..."
+# Deleting blade-flags cloned repository
+echo -e "${YELLOW}Deleting temp files ..."
 cd ../../../../
 rm -rf blade-flags
 
 # Done
-echo -e "\n${GREEN}Done!${NO_COLOR}"
+echo -e "\n${GREEN}
+██████   ██████  ███    ██ ███████ ██ 
+██   ██ ██    ██ ████   ██ ██      ██ 
+██   ██ ██    ██ ██ ██  ██ █████   ██ 
+██   ██ ██    ██ ██  ██ ██ ██         
+██████   ██████  ██   ████ ███████ ██ 
+${NO_COLOR}"
