@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="dev.moaz.dash_flags_example">
    <application
-        android:label="example"
+        android:label="Dash Flags - Example"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
