@@ -1,16 +1,9 @@
-# example
+# Dash Flags - Example
 
-A new Flutter project.
+This is an example of how to use the [dash_flags](https://pub.dev/packages/dash_flags) package.
 
-## Getting Started
+## Screenshots
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p align="center">
+<img src="https://raw.githubusercontent.com/moazelsawaf/dash_flags/main/doc/assets/dash_flags_example.webp" width="50%" alt="Dash Flags - Example" />
+</p>

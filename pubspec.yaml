@@ -1,5 +1,5 @@
 name: dash_flags
-description: A package for displaying flags of countries and languages with a set of widgets and enums inspired by blade-flags package for Laravel by @MohmmedAshraf from Egypt.
+description: A package for displaying flags of countries and languages with a set of widgets and enums
 version: 0.0.2
 repository: https://github.com/moazelsawaf/dash_flags
 issue_tracker: https://github.com/moazelsawaf/dash_flags/issues

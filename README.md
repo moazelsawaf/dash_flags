@@ -8,18 +8,17 @@
     <img src="https://img.shields.io/badge/Platform-Flutter-02569B?logo=flutter" alt="Platform">
   </a>
   <a href="https://pub.dartlang.org/packages/dash_flags">
-    <img alt="Pub Package" src="https://img.shields.io/pub/v/dash_flags.svg">
+    <img alt="Pub Package" src="https://img.shields.io/pub/v/dash_flags.svg?color=blue">
   </a>
-    <a href="https://github.com/tenhobi/effective_dart">
-    <img alt="style: effective dart" src="https://img.shields.io/badge/style-effective_dart-40c4ff.svg">
-  </a> 
+  <a href="https://opensource.org/licenses/BSD-3-Clause"
+  rel="ugc"><img src="https://img.shields.io/badge/License-BSD_3--Clause-red.svg" alt="License: BSD-3-Clause"></a>
   <br>
-  <a href="https://github.com/moazelsawaf/dash_flags">
-    <img src="https://img.shields.io/github/stars/moazelsawaf/dash_flags.svg?style=flat&logo=github&colorB=deeppink&label=stars" alt="Star on GitHub">
-  </a>
-  <a href="https://opensource.org/licenses/BSD-3-Clause" 
-    rel="ugc"><img src="https://img.shields.io/badge/License-BSD_3--Clause-red.svg" alt="License: BSD-3-Clause"></a>
   <a href="https://github.com/moazelsawaf/dash_flags" rel="ugc"><img   src="https://img.shields.io/github/languages/code-size/moazelsawaf/dash_flags.svg" alt="GitHub code size in bytes"></a>
+  <a href="https://github.com/moazelsawaf/dash_flags">
+    <img src="https://img.shields.io/github/stars/moazelsawaf/dash_flags.svg?style=flat&logo=github&colorB=ffcc00&label=stars" alt="Star on GitHub">
+  </a>
+  <a href="https://github.com/moazelsawaf/dash_flags/issues" rel="ugc"><img   src="https://img.shields.io/github/issues/moazelsawaf/dash_flags.svg?color=DF1304" alt="GitHub Open Issues"></a>
+  <a href="https://github.com/moazelsawaf/dash_flags/commits/main" rel="ugc"><img   src="https://img.shields.io/github/last-commit/moazelsawaf/dash_flags.svg" alt="GitHub Last Commit Date"></a>
 </p>
 
 ---
@@ -32,9 +31,8 @@ This package provides a set of widgets and enums to display flags of countries a
 
 The package uses flags from [TwEmoji Countries & Languages Flags](https://github.com/twitter/twemoji) by Twitter
 
-
 <p align="center">
-<img src="https://raw.githubusercontent.com/moazelsawaf/dash_flags/main/doc/assets/animated_example.gif" width="50%" alt="Example GIF" />
+<img src="https://raw.githubusercontent.com/moazelsawaf/dash_flags/main/doc/assets/animated_example.webp" width="50%" alt="Animated Example" />
 <br>
 This GIF is taken from the <a href="https://github.com/moazelsawaf/dash_flags/tree/main/example">Example Project</a>
 </p>
@@ -82,7 +80,8 @@ LanguageFlag(
 - [ ] Add the ability to use the flags from the internet, such as, `CountryFlag.network(...)` 🌐
 - [ ] Add the ability to automatically detect the current `Country` or `Language`, such as, `Country.autoDetect` & `Language.autoDetect` 🕵🏻‍♂️
 
-## ❤ Laravel Version
+## 💖 Laravel Version
+
 If you are looking for a Laravel Version of this package, check [blade-flags](https://github.com/MohmmedAshraf/blade-flags), the original parent package of this library which that provides a set of flags for all countries and languages by [Mohamed Ashraf](https://github.com/MohmmedAshraf) from Egypt.
 
 <a href="https://github.com/MohmmedAshraf/blade-flags">
