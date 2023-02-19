@@ -1,6 +1,6 @@
 name: dash_flags
 description: A package for displaying flags of countries and languages with a set of widgets and enums
-version: 0.0.3
+version: 0.0.4
 repository: https://github.com/moazelsawaf/dash_flags
 issue_tracker: https://github.com/moazelsawaf/dash_flags/issues
 screenshots:
