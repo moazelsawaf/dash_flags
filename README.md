@@ -86,11 +86,11 @@ TimezoneFlag(
 ### Timezones Codes:
 
 - The forward slash sign `/` in the name of the timezone is replaced with an underscore `_`.
-- If the `Timezone` contains minus `-` sign, then you will find it replaced with `_minus_`, for example: US_East_minus_Indiana, US_Indiana_minus_Starke, Asia_Ust_minus_Nera
-- If the `Timezone` contains plus `+` sign, then you will find it replaced `_plus_`, for example: Etc_GMT_plus_0, Etc_GMT_plus_1, Etc_GMT_plus_10
-- If the `Timezone` is associated with more than one country, then you will find a default enum member for it and other enum members for each country, for example: Africa_Johannesburg, Africa_Johannesburg_ZA, Africa_Johannesburg_LS, Africa_Johannesburg_SZ
+- If the `Timezone` contains minus `-` sign, then you will find it replaced with `_minus_`, for example: `US_East_minus_Indiana`, `US_Indiana_minus_Starke`, and `Asia_Ust_minus_Nera`
+- If the `Timezone` contains plus `+` sign, then you will find it replaced `_plus_`, for example: `Etc_GMT_plus_0`, `Etc_GMT_plus_1`, and `Etc_GMT_plus_10`
+- If the `Timezone` is associated with more than one country, then you will find a default enum member for it and other enum members for each country, for example: `Africa_Johannesburg`, `Africa_Johannesburg_ZA`, `Africa_Johannesburg_LS`, and `Africa_Johannesburg_SZ`
 - If you have the `Timezone` as `String` and you want to get the corresponding `Timezone` enum member, then you can use `.fromString()` method.
-- If you want to use the `Timezone` with its original name without the above changes, then use `.fromString()` method, for example: Timezone.fromString('Africa/Cairo')
+- If you want to use the `Timezone` with its original name without the above changes, then use `.fromString()` method, for example: `Timezone.fromString('Africa/Cairo')`
 
 ## ✅ Roadmap
 
