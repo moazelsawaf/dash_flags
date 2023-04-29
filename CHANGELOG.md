@@ -1,3 +1,7 @@
+## 0.1.0
+
+* feat 🎉 Introduce a new type of flags, the `TimezoneFlag`
+
 ## 0.0.4
 
 * Upgraded the dependencies
