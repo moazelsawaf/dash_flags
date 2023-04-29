@@ -3,7 +3,7 @@
 /// If the country code is not available, it will be `xx`.
 ///
 /// Source: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-/// 
+///
 const timezonesCodes = {
   "africa_harare": "zw",
   "africa_lusaka": "zm",
