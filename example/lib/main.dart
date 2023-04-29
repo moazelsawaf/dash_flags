@@ -32,10 +32,13 @@ class FlagsScreen extends StatefulWidget {
 }
 
 class _FlagsScreenState extends State<FlagsScreen> {
+  static const flagHeight = 120.0;
   final List<Country> _countries = Country.values;
   final List<Language> _languages = Language.values;
+  final List<Timezone> _timezones = Timezone.values;
   int _selectedCountryIndex = 0;
   int _selectedLanguageIndex = 0;
+  int _selectedTimezoneIndex = 0;
 
   @override
   void initState() {
@@ -51,6 +54,10 @@ class _FlagsScreenState extends State<FlagsScreen> {
           _selectedLanguageIndex == _languages.length - 1
               ? _selectedLanguageIndex = 0
               : _selectedLanguageIndex++;
+
+          _selectedTimezoneIndex == _timezones.length - 1
+              ? _selectedTimezoneIndex = 0
+              : _selectedTimezoneIndex++;
         });
       },
     );
@@ -63,37 +70,49 @@ class _FlagsScreenState extends State<FlagsScreen> {
         title: const Text('Dash Flags - Example'),
         centerTitle: true,
       ),
-      body: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              'Country: ${_countries[_selectedCountryIndex].name.toUpperCase()}',
-              style: const TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w500,
+      body: Padding(
+        padding: const EdgeInsets.all(24),
+        child: Center(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              _buildLabel(
+                  'Country: ${_countries[_selectedCountryIndex].name.toUpperCase()}'),
+              const SizedBox(height: 24),
+              CountryFlag(
+                country: _countries[_selectedCountryIndex],
+                height: flagHeight,
               ),
-            ),
-            const SizedBox(height: 24),
-            CountryFlag(
-              country: _countries[_selectedCountryIndex],
-              height: 150,
-            ),
-            const SizedBox(height: 48),
-            Text(
-              'Language: ${_languages[_selectedLanguageIndex].name.toUpperCase()}',
-              style: const TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w500,
+              const SizedBox(height: 48),
+              _buildLabel(
+                  'Language: ${_languages[_selectedLanguageIndex].name.toUpperCase()}'),
+              const SizedBox(height: 24),
+              LanguageFlag(
+                language: _languages[_selectedLanguageIndex],
+                height: flagHeight,
               ),
-            ),
-            const SizedBox(height: 24),
-            LanguageFlag(
-              language: _languages[_selectedLanguageIndex],
-              height: 150,
-            )
-          ],
+              const SizedBox(height: 48),
+              _buildLabel(
+                  'Timezone:\n${_timezones[_selectedTimezoneIndex].name.toUpperCase()}'),
+              const SizedBox(height: 24),
+              TimezoneFlag(
+                timezone: _timezones[_selectedTimezoneIndex],
+                height: flagHeight,
+              ),
+            ],
+          ),
         ),
+      ),
+    );
+  }
+
+  Text _buildLabel(String text) {
+    return Text(
+      text,
+      textAlign: TextAlign.center,
+      style: const TextStyle(
+        fontSize: 18,
+        fontWeight: FontWeight.w500,
       ),
     );
   }

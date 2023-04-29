@@ -32,7 +32,7 @@ This package provides a set of widgets and enums to display flags of countries a
 The package uses flags from [TwEmoji Countries & Languages Flags](https://github.com/twitter/twemoji) by Twitter
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/moazelsawaf/dash_flags/main/doc/assets/animated_example.webp" width="50%" alt="Animated Example" />
+<img src="https://raw.githubusercontent.com/moazelsawaf/dash_flags/main/doc/assets/animated_example.webp" width="100%" alt="Animated Example" />
 <br>
 This GIF is taken from the <a href="https://github.com/moazelsawaf/dash_flags/tree/main/example">Example Project</a>
 </p>
@@ -49,7 +49,7 @@ Display a flag of a country:
 
 ```dart
 CountryFlag(
-  country: Country.eg, // You can also use Country.fromCode('eg')
+  country: Country.eg, // OR Country.fromCode('eg')
   height: 50,
 )
 ```
@@ -58,7 +58,16 @@ Display a flag of a language:
 
 ```dart
 LanguageFlag(
-  language: Language.ar, // You can also use Language.fromCode('ar')
+  language: Language.ar, // OR Language.fromCode('ar')
+  height: 50,
+)
+```
+
+Display a flag of a timezone:
+
+```dart
+TimezoneFlag(
+  timezone: Timezone.africa_cairo, // OR Timezone.fromString('Africa/Cairo')
   height: 50,
 )
 ```
@@ -67,10 +76,21 @@ LanguageFlag(
 
 ## 📃 Notes
 
+### Countries & Languages Codes:
+
 - If you have the `Country Code` or `Language Code` as `Strings`, then you can use `Country.fromCode(countryCode)` or `Language.fromCode(languageCode)`.
 - If the the `Country Code` or `Language Code` consists of more than one part, then you will find it separated by an `underscore`, for example: `sh_ac` and `en_au`.
 - If the the `Country Code` or `Language Code` is a reserved keyword in Dart, then you will find it prefixed with `c_` or `l_` respectively, for example: `c_as` and `l_as`.
 - If an unknown `Country Code` or `Language Code` used with `.fromCode(String)` method, an unknown flag would be displayed.
+
+### Timezones Codes:
+
+- The forward slash sign `/` in the name of the timezone is replaced with an underscore `_`.
+- If the `Timezone` contains minus `-` sign, then you will find it replaced with `_minus_`, for example: US_East_minus_Indiana, US_Indiana_minus_Starke, Asia_Ust_minus_Nera
+- If the `Timezone` contains plus `+` sign, then you will find it replaced `_plus_`, for example: Etc_GMT_plus_0, Etc_GMT_plus_1, Etc_GMT_plus_10
+- If the `Timezone` is associated with more than one country, then you will find a default enum member for it and other enum members for each country, for example: Africa_Johannesburg, Africa_Johannesburg_ZA, Africa_Johannesburg_LS, Africa_Johannesburg_SZ
+- If you have the `Timezone` as `String` and you want to get the corresponding `Timezone` enum member, then you can use `.fromString()` method.
+- If you want to use the `Timezone` with its original name without the above changes, then use `.fromString()` method, for example: Timezone.fromString('Africa/Cairo')
 
 ## ✅ Roadmap
 
