@@ -15,7 +15,7 @@ class Helpers {
 
   /// Returns the asset path of a flag for a specific [timezone].
   static String timezoneToFlagAsset(Timezone timezone) {
-    final modifiedTimezoneName = _mapTimezoneName(timezone.name);
+    final modifiedTimezoneName = mapTimezoneName(timezone.name);
 
     final countryCode = timezonesCodes[modifiedTimezoneName];
 
@@ -31,7 +31,7 @@ class Helpers {
   /// - `+` is replaced with `_plus_`
   /// - The name is converted to lowercase
   ///
-  static String _mapTimezoneName(String timezoneName) {
+  static String mapTimezoneName(String timezoneName) {
     String modifiedTimezoneName = timezoneName;
 
     if (timezoneName.contains('/')) {

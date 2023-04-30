@@ -1,5 +1,7 @@
 // ignore_for_file: constant_identifier_names
 
+import '../utils/helpers.dart';
+
 /// The list of all supported timezones.
 ///
 /// The forward slash sign `/` in the name of the timezone is replaced with an underscore `_` because it is not allowed in Dart enum members names.
@@ -2247,7 +2249,7 @@ enum Timezone {
   /// The [timezone] is case insensitive
   static Timezone fromString(String timezone) {
     return Timezone.values.firstWhere(
-      (member) => member.name.toLowerCase() == timezone.toLowerCase().replaceAll('/','_'),
+      (member) => member.name == Helpers.mapTimezoneName(timezone),
       orElse: () => Timezone.xx,
     );
   }
