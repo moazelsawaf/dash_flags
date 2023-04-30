@@ -730,7 +730,7 @@ const timezonesCodes = {
   "etc_universal": "xx",
   "etc_utc": "xx",
   "etc_zulu": "xx",
-  "factory": "xx",
+  "factory_timezone": "xx",
   "gmt": "xx",
   "gmt_plus_0": "xx",
   "gmt_minus_0": "xx",

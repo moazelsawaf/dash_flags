@@ -6,16 +6,20 @@ import '../extensions/string_extension.dart';
 ///
 /// The forward slash sign `/` in the name of the timezone is replaced with an underscore `_` because it is not allowed in Dart enum members names.
 /// If the `Timezone` contains minus `-` sign, then you will find it replaced with `_minus_` because it is not allowed in Dart enum members names.
+///
 /// For example: US_East_minus_Indiana, US_Indiana_minus_Starke, Asia_Ust_minus_Nera
 /// If the `Timezone` contains plus `+` sign, then you will find it replaced with `_plus_` because it is not allowed in Dart enum members names.
 /// For example: Etc_GMT_plus_0, Etc_GMT_plus_1, Etc_GMT_plus_10
+///
 /// If the `Timezone` is associated with more than one country, then you will find a default enum member for it and other enum members for each country.
 /// For example: Africa_Johannesburg, Africa_Johannesburg_ZA, Africa_Johannesburg_LS, Africa_Johannesburg_SZ
 ///
+/// The `factory` timezone is called `factory_timezone` because `factory` is a reserved word in Dart.
+///
 /// If you have the `Timezone` as `String` and you want to get the corresponding [Timezone] enum member, then you can use [fromString] method.
 ///
-/// If you want to use the `Timezone` with its original name without the above changes, then use [Timezone.fromString] method.
-/// For example: Timezone.fromString('Africa/Cairo')
+/// If you want to use the `Timezone` with its original name without the above changes, then use [Timezone.fromString] method, you can also use it with mapped timezones names.
+/// For example: Timezone.fromString('Africa/Cairo') or Timezone.fromString('africa_cairo')
 ///
 enum Timezone {
   /// Africa/Harare
@@ -2194,7 +2198,7 @@ enum Timezone {
   etc_zulu,
 
   /// Factory
-  factory,
+  factory_timezone,
 
   /// GMT
   gmt,
