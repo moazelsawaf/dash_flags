@@ -35,9 +35,5 @@
 /// For more information about the available languages, please check the `Language` enum.
 library dash_flags;
 
-export 'src/widgets/country_flag.dart';
-export 'src/widgets/language_flag.dart';
-export 'src/widgets/timezone_flag.dart';
-export 'src/enums/country.dart';
-export 'src/enums/language.dart';
-export 'src/enums/timezone.dart';
+export 'src/widgets/widgets.dart';
+export 'src/enums/enums.dart';
