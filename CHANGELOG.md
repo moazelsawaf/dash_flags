@@ -1,13 +1,13 @@
 # 0.1.1
 
-docs: 📝 enhance timezone codes section
-fix: 🐛 use the full timezone name mapping convention of the package in `Timezone.fromString()` to cover all the cases.
-fix: 🐛 rename factory timezone to factory_timezone to avoid keyword conflict
-fix: 🐛 return unknown flag for the unknown timezones
-fix: 🐛 prefix the countries codes that are reserved keywords in Dart with `c_` in `timezonesCodes` map.
-refactor: 🏗️ organize library and library exports
-refactor: ♻️ refactor `Helpers` class to types extensions for better modularity
-chore: 🚨 add a lint rule to prefer the relative imports
+* docs: 📝 enhance timezone codes section
+* fix: 🐛 use the full timezone name mapping convention of the package in `Timezone.fromString()` to cover all the cases.
+* fix: 🐛 rename factory timezone to factory_timezone to avoid keyword conflict
+* fix: 🐛 return unknown flag for the unknown timezones
+* fix: 🐛 prefix the countries codes that are reserved keywords in Dart with `c_` in `timezonesCodes` map.
+* refactor: 🏗️ organize library and library exports
+* refactor: ♻️ refactor `Helpers` class to types extensions for better modularity
+* chore: 🚨 add a lint rule to prefer the relative imports
 
 ## 0.1.0
 
