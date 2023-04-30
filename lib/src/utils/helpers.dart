@@ -15,6 +15,10 @@ class Helpers {
 
   /// Returns the asset path of a flag for a specific [timezone].
   static String timezoneToFlagAsset(Timezone timezone) {
+    if (timezone == Timezone.xx) {
+      return 'assets/svgs/flags/countries/country_xx.svg';
+    }
+
     final modifiedTimezoneName = mapTimezoneName(timezone.name);
 
     final countryCode = timezonesCodes[modifiedTimezoneName];
