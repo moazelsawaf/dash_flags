@@ -1,6 +1,6 @@
 name: dash_flags
 description: A package for displaying flags of countries and languages with a set of widgets and enums
-version: 0.1.0
+version: 0.1.1
 repository: https://github.com/moazelsawaf/dash_flags
 issue_tracker: https://github.com/moazelsawaf/dash_flags/issues
 screenshots:
@@ -8,7 +8,7 @@ screenshots:
     path: doc/assets/animated_example.webp
 
 environment:
-  sdk: '>=2.19.0 <4.0.0'
+  sdk: ">=2.19.0 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
