@@ -2247,7 +2247,7 @@ enum Timezone {
   /// The [timezone] is case insensitive
   static Timezone fromString(String timezone) {
     return Timezone.values.firstWhere(
-      (member) => member.name.toLowerCase() == timezone.toLowerCase(),
+      (member) => member.name.toLowerCase().replaceAll('/','_') == timezone.toLowerCase(),
       orElse: () => Timezone.xx,
     );
   }
