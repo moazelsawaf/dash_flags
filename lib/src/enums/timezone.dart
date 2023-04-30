@@ -1,6 +1,6 @@
 // ignore_for_file: constant_identifier_names
 
-import '../utils/helpers.dart';
+import '../extensions/string_extension.dart';
 
 /// The list of all supported timezones.
 ///
@@ -2249,7 +2249,7 @@ enum Timezone {
   /// The [timezone] is case insensitive
   static Timezone fromString(String timezone) {
     return Timezone.values.firstWhere(
-      (member) => member.name == Helpers.mapTimezoneName(timezone),
+      (member) => member.name == timezone.asMappedTimezoneName,
       orElse: () => Timezone.xx,
     );
   }

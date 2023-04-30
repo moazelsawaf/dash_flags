@@ -1,7 +1,8 @@
 // Project imports:
-import '../enums/language.dart';
-import '../utils/helpers.dart';
+
 import 'flag.dart';
+import '../enums/language.dart';
+import '../extensions/language_extension.dart';
 
 /// A flag widget for a specific [Language].
 ///
@@ -17,5 +18,5 @@ import 'flag.dart';
 class LanguageFlag extends Flag {
   /// Creates a flag widget for a specific [Language].
   LanguageFlag({super.key, required Language language, super.height = 32})
-      : super(flagAsset: Helpers.languageToFlagAsset(language));
+      : super(flagAsset: language.asFlagAsset);
 }

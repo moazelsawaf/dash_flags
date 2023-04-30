@@ -1,7 +1,8 @@
 // Project imports:
-import '../enums/timezone.dart';
-import '../utils/helpers.dart';
+
 import 'flag.dart';
+import '../enums/timezone.dart';
+import '../extensions/timezone_extension.dart';
 
 /// A flag widget for a specific [Timezone].
 ///
@@ -24,5 +25,5 @@ import 'flag.dart';
 class TimezoneFlag extends Flag {
   /// Creates a flag widget for a specific [Timezone].
   TimezoneFlag({super.key, required Timezone timezone, super.height = 32})
-      : super(flagAsset: Helpers.timezoneToFlagAsset(timezone));
+      : super(flagAsset: timezone.asFlagAsset);
 }

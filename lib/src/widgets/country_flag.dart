@@ -1,7 +1,8 @@
 // Project imports:
-import '../enums/country.dart';
-import '../utils/helpers.dart';
+
 import 'flag.dart';
+import '../enums/country.dart';
+import '../extensions/country_extension.dart';
 
 /// A flag widget for a specific [Country].
 ///
@@ -17,5 +18,5 @@ import 'flag.dart';
 class CountryFlag extends Flag {
   /// Creates a flag widget for a specific [Country].
   CountryFlag({super.key, required Country country, super.height = 32})
-      : super(flagAsset: Helpers.countryToFlagAsset(country));
+      : super(flagAsset: country.asFlagAsset);
 }
