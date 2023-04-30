@@ -19,7 +19,7 @@ class Helpers {
       return 'assets/svgs/flags/countries/country_xx.svg';
     }
 
-    final modifiedTimezoneName = _mapTimezoneName(timezone.name);
+    final modifiedTimezoneName = mapTimezoneName(timezone.name);
 
     final countryCode = timezonesCodes[modifiedTimezoneName];
 
@@ -35,7 +35,7 @@ class Helpers {
   /// - `+` is replaced with `_plus_`
   /// - The name is converted to lowercase
   ///
-  static String _mapTimezoneName(String timezoneName) {
+  static String mapTimezoneName(String timezoneName) {
     String modifiedTimezoneName = timezoneName;
 
     if (timezoneName.contains('/')) {
