@@ -461,9 +461,30 @@ enum Language {
   ///
   /// The [languageCode] is case insensitive
   static Language fromCode(String languageCode) {
-    return Language.values.firstWhere(
+    languageCode = languageCode.replaceAll('-', '_').toLowerCase();
+
+    Language result = Language.values.firstWhere(
       (language) => language.name.toLowerCase() == languageCode.toLowerCase(),
       orElse: () => Language.xx,
     );
+
+    // returns the language except fallback language
+    if (result != Language.xx) return result;
+
+    // fallback search if nothing found
+    // eg.: 'en_us' -> ['us', 'en']
+    List<String> parts = [languageCode]
+      ..addAll(languageCode.split('_').reversed);
+    for (String part in parts) {
+      result = Language.values.firstWhere(
+        (Language? language) => language.toString().split('.')[1] == part,
+        orElse: () => Language.xx,
+      );
+
+      // return the result on the first match
+      if (result != Language.xx) return result;
+    }
+
+    return result;
   }
 }
