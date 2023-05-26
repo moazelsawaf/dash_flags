@@ -250,6 +250,9 @@ enum Country {
   ga,
 
   /// United Kingdom
+  uk,
+
+  /// Great Britain
   gb,
 
   /// Grenada
