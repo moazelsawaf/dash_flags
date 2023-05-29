@@ -1,4 +1,7 @@
-# 0.1.1
+# 0.1.2
+
+* handle language codes using hyphen and underscore format
+## 0.1.1
 
 * docs: 📝 enhance timezone codes section
 * fix: 🐛 use the full timezone name mapping convention of the package in `Timezone.fromString()` to cover all the cases.

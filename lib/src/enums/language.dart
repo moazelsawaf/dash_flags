@@ -112,6 +112,9 @@ enum Language {
   /// English (South Africa)
   en_za,
 
+  /// English (Great Britain)
+  en_gb,
+
   /// English
   en,
 
@@ -472,17 +475,13 @@ enum Language {
     if (result != Language.xx) return result;
 
     // fallback search if nothing found
-    // eg.: 'en_us' -> ['us', 'en']
-    List<String> parts = [languageCode]
-      ..addAll(languageCode.split('_').reversed);
-    for (String part in parts) {
+    // eg.: 'kz_ru' -> Language.ru
+    List<String> parts = languageCode.split('_').toList();
+    if (parts.length == 2) {
       result = Language.values.firstWhere(
-        (Language? language) => language.toString().split('.')[1] == part,
+        (Language? language) => language.toString().split('.')[1] == parts.last,
         orElse: () => Language.xx,
       );
-
-      // return the result on the first match
-      if (result != Language.xx) return result;
     }
 
     return result;
