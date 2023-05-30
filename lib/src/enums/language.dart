@@ -1,5 +1,7 @@
 // ignore_for_file: constant_identifier_names
 
+import '../extensions/extensions.dart';
+
 /// The list of all supported languages.
 ///
 /// If the `Language Code` consists of more than one part, then you will find it separated by an `underscore`
@@ -111,9 +113,6 @@ enum Language {
 
   /// English (South Africa)
   en_za,
-
-  /// English (Great Britain)
-  en_gb,
 
   /// English
   en,
@@ -463,27 +462,32 @@ enum Language {
   /// Returns the [Language] enum member from the given [languageCode] String.
   ///
   /// The [languageCode] is case insensitive
+  ///
+  /// If the given [languageCode] contains `-`, it will be replaced with `_`.
+  ///
+  /// If the [languageCode] is composed of multiple parts, it will be splitted
+  /// by `_` and a partial matching will be performed on each part from first to last.
+  ///
+  /// If the [languageCode] is not found, [Language.xx] is returned.
   static Language fromCode(String languageCode) {
-    languageCode = languageCode.replaceAll('-', '_').toLowerCase();
+    final mappedLanguageCode = languageCode.asMappedLanguageCode;
 
-    Language result = Language.values.firstWhere(
-      (language) => language.name.toLowerCase() == languageCode.toLowerCase(),
-      orElse: () => Language.xx,
+    return Language.values.firstWhere(
+      (language) => language.name.toLowerCase() == mappedLanguageCode,
+      orElse: () {
+        final languageCodeParts = mappedLanguageCode.split('_');
+
+        for (final part in languageCodeParts) {
+          final language = Language.values.firstWhere(
+            (language) => language.name.toLowerCase() == part,
+            orElse: () => Language.xx,
+          );
+
+          if (language != Language.xx) return language;
+        }
+
+        return Language.xx;
+      },
     );
-
-    // returns the language except fallback language
-    if (result != Language.xx) return result;
-
-    // fallback search if nothing found
-    // eg.: 'kz_ru' -> Language.ru
-    List<String> parts = languageCode.split('_').toList();
-    if (parts.length == 2) {
-      result = Language.values.firstWhere(
-        (Language? language) => language.toString().split('.')[1] == parts.last,
-        orElse: () => Language.xx,
-      );
-    }
-
-    return result;
   }
 }

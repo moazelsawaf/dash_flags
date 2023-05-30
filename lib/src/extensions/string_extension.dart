@@ -26,4 +26,21 @@ extension StringExtension on String {
 
     return modifiedTimezoneName.toLowerCase();
   }
+
+  /// Maps the string to match package conventions for language names.
+  ///
+  /// The package uses the following conventions:
+  ///
+  /// - `-` is replaced with `_`
+  /// - The name is converted to lowercase
+  ///
+  String get asMappedLanguageCode {
+    String modifiedLanguage = this;
+
+    if (modifiedLanguage.contains('-')) {
+      modifiedLanguage = modifiedLanguage.replaceAll('-', '_');
+    }
+
+    return modifiedLanguage.toLowerCase();
+  }
 }
