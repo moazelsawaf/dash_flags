@@ -1,6 +1,3 @@
-# 0.1.2
-
-* handle language codes using hyphen and underscore format
 ## 0.1.1
 
 * docs: 📝 enhance timezone codes section
