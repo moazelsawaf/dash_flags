@@ -1183,9 +1183,6 @@ enum Timezone {
   /// Asia/Tel_Aviv
   asia_tel_aviv,
 
-  /// Israel
-  israel,
-
   /// Eire
   eire,
 

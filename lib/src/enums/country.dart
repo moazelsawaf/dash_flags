@@ -333,9 +333,6 @@ enum Country {
   /// Ireland
   ie,
 
-  /// Israel
-  il,
-
   /// Isle of Man
   im,
 

@@ -392,7 +392,6 @@ const timezonesCodes = {
   "europe_isle_of_man": "im",
   "asia_jerusalem": "il",
   "asia_tel_aviv": "il",
-  "israel": "il",
   "eire": "ie",
   "europe_dublin": "ie",
   "asia_jakarta": "id",
